@@ -1,4 +1,4 @@
-package day07_IfStatements;
+package day07_ifStatements;
 
 public class C01_AndOperatorleri {
     public static void main(String[] args) {
@@ -18,9 +18,9 @@ public class C01_AndOperatorleri {
 
         & kullanırsak tum sartlari kontrol eder sonra sonucu belirler
 
-        bu calisam usulunden dolayi & operatoru, && operatorune gore daha yavas olabilir.
+        bu calisma usulunden dolayi & operatoru, && operatorune gore daha yavas olabilir.
          */
 
-        System.out.println(a<0 & b<0 & c>=0); //false
+        System.out.println(a<0 & b<0 & c>=b); //false
     }
 }

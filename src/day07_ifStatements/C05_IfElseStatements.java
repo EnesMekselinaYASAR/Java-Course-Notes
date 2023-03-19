@@ -1,4 +1,4 @@
-package day07_IfStatements;
+package day07_ifStatements;
 
 import java.util.Scanner;
 
@@ -12,6 +12,9 @@ public class C05_IfElseStatements {
 
         if ((harf>='a' && harf<='z') || (harf>='A' && harf<='Z')){
             System.out.println("Girilen karakter bir harf");
+        } else {
+            System.out.println("Girilen karakter bir harf degil");
         }
+
     }
 }

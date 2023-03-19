@@ -1,4 +1,4 @@
-package day07_IfStatements;
+package day07_ifStatements;
 
 public class C02_BasitIfStatements {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class C02_BasitIfStatements {
         basit if cumleleri kodun diger parcalarindan bagimsizdir
         sadece bir sart kontrol eder, sart saglamiyorsa, if body calisir, yoksa calismaz
         birden fazla basit if cumlesi varsa girilen sarta bagli olarak,
-        tumunde
+        tumunde if body si calısabilir, kısmen ıf body leri calısabilir. veya hicbir if body si calısmayabilir.
          */
     }
 }
