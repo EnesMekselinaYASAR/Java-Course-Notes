@@ -1,4 +1,70 @@
 package day17_NestedForLoop;
 
+import java.util.Scanner;
+
 public class C09_WhileLoop {
+    public static void main(String[] args) {
+         /*
+         Soru 6) Kullanicidan bir sifre girmesini isteyin.
+        Asagidaki sartlari sagliyorsa “Sifre basari ile tanimlandi”,
+        sartlari saglamazsa “Islem basarisiz,Lutfen yeni bir sifre girin” yazdirin
+        ve basarili sifre girinceye kadar tekrar sifre girmesini isteyin.
+        - Ilk harf buyuk harf olmali
+        - Son harf kucuk harf olmali
+        - Sifre bosluk icermemeli
+        - Sifre uzunlugu en az 8 karakter olmali
+         */
+
+        Scanner scan=new Scanner(System.in);
+        String sifre="";
+        boolean sifreBasaraliMi=false;
+        int kontrol=0;
+
+        while(!sifreBasaraliMi){
+            System.out.print("Lutfen bir sifre giriniz:");
+            sifre=scan.nextLine();
+
+            if (sifre.charAt(0)>='A'&& sifre.charAt(0)<='Z'){
+                kontrol++;
+            }else System.out.println("Ilk harf buyuk harf olmali");
+
+            if(sifre.charAt(sifre.length()-1)>='a'&&sifre.charAt(sifre.length()-1)<='z'){
+                kontrol++;
+            }else System.out.println("Son harf kucuk olmali");
+
+            if(sifre.contains(" ")){
+                System.out.println("Sifre bosluk icermemeli");
+            }else kontrol++;
+
+            if(sifre.length()>=8){
+                kontrol++;
+            }else System.out.println("Sifre 8 karakterden az olamaz");
+
+            if(kontrol==4){
+                System.out.println("Sifre basari ile tanimlandi");
+                sifreBasaraliMi=true;
+            }else{
+                kontrol=0;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        if(kontrol==4){
+            System.out.println("Sifre basari ile tanimlandi");
+        }else System.out.println("Islem basarisiz,Lutfen yeni bir sifre girin");
+
+
+
+    }
 }
