@@ -1,5 +1,7 @@
 package day26_Constructor;
 
+import java.io.Console;
+
 public class OgretmenRunner {
     public static void main(String[] args) {
 
@@ -11,5 +13,7 @@ public class OgretmenRunner {
 
         Ogretmen ogretmen3=new Ogretmen("Cavidan","Kabinkara","1/1/1991");
         System.out.println("ogretmen3 = " + ogretmen3);
+
+
     }
 }
