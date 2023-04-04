@@ -34,7 +34,5 @@ public class C03_varargsIleToplama {
         }
         System.out.println("Girilen "+sayiAdeti+" adet sayinin toplami : "+toplam);
 
-
-
     }
 }
