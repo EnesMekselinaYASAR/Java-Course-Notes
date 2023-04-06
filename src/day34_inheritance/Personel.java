@@ -8,22 +8,20 @@ public class Personel {
     variable ve method'larin access modifier'ini protected
      */
 
-    int persNo;
-    String isim="Isim belirtilmedi";
-    String departman="Departman belirtilmedi";
+    protected int persNo;
+    protected String isim="Isim belirtilmedi";
+    protected String departman="Departman belirtilmedi";
 
-    public void maas(){
+    protected void maas(){
         System.out.println("Tum personelin maasi vardir");
     }
 
-    public void mesai(){
+    protected void mesai(){
         System.out.println("Tum personel statusune gore mesai yapar");
     }
 
-    public void fazlaMesaiUcreti(){
+    protected void fazlaMesaiUcreti(){
         System.out.println("Personel fazla mesai ucretini statusune gore alir");
     }
-
-
 
 }
