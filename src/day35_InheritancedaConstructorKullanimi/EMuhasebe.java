@@ -1,13 +1,13 @@
 package day35_InheritancedaConstructorKullanimi;
 
-public class EMuhasebe {
+public class EMuhasebe extends DPersonel {
 
     EMuhasebe (){
-        System.out.println("Nuhasebe parametresiz constructor");
+        System.out.println("Muhasebe parametresiz constructor");
     }
 
     EMuhasebe (String isim){
-        System.out.println("Nuhasebe parametreli constructor");
+        System.out.println("Muhasebe parametreli constructor");
     }
 
 }
