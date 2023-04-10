@@ -1,5 +1,4 @@
 package day36_InheritanceDataTypeKullanimi;
-
 import java.util.*;
 
 public class DIsci extends BMuhasebe{
@@ -36,7 +35,6 @@ public class DIsci extends BMuhasebe{
         System.out.println(isc1.isim); // Personel
         System.out.println(isc1.soyIsim); // Personel
         System.out.println(isc1.departman); // Personel
-
 
         APersonel isc2=new DIsci();
 
