@@ -49,14 +49,12 @@ public class DIsci extends BMuhasebe{
         System.out.println(isc2.soyIsim); // Personel
         System.out.println(isc2.departman); // Personel
 
-
          /*
         --> Eger data turu olan class'da aradigimiz ozellik yoksa
         varsasn onun parent'ina gidebilir.
         ama child'a donus olmaz.
         --> Aradigi ozelligi bulamazsa CTE verir
          */
-
 
         List<String> list1 = new LinkedList<>();
         Deque<String> list2= new LinkedList<>();
