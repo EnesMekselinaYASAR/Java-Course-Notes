@@ -14,14 +14,35 @@ public class EyanHizmetler extends BMuhasebe{
     }
 
     public static void main(String[] args) {
-        CMemur mmr1=new CMemur();
-        System.out.println(mmr1.gunlukMesai); // 9
-        System.out.println(mmr1.saatUcreti); // 12
-        mmr1.maas();
-        mmr1.ozelSigorta();
-        mmr1.sigorta(); // Personel
-        System.out.println(mmr1.isim); // Personel
-        System.out.println(mmr1.soyIsim); // Personel
-        System.out.println(mmr1.departman); // Personel
+
+         /*
+       --> Overriding child class'daki bir method'un parent class'daki ayni isimdeki
+       method'u etkisiz hale getirerek kendisinin spesifik ozelligini ortaya cıkarmasıdır.
+       --> Overriding'i nerede dikkate aliyoruz?
+       bir obje olusturulurken data turu ve constructor farkli ise
+       Eger bir obje olusturulurken data turu ve constructor farkli ise
+       objenin ozelliklerini belirlerken 3 konuya dikkat cekmeliyiz.
+            1- Obje constructor'ın oldugu class'da olusur.
+            2- Obje'nin ozelliklerini aramaya data turunun oldugu class'dan baslariz.
+               bu class'da aranan ozellik bulunamazsa parent class'lara bakilir. orada da
+               bulamazsak o zaman CTE verir.
+      ==> Eger aranan ozellik variable ise buldugumuz ilk degeri yazdiririz.
+            3- Aranan ozellik method ise degeri yazdirmadan once override edilmis mi
+               diye kontrol etmemiz gerekir
+               Eger override edildiyse en guncel degeri yazdiririz.
+       */
+
+        BMuhasebe yh1=new EyanHizmetler();
+        System.out.println(yh1.gunlukMesai); // M 8
+        System.out.println(yh1.saatUcreti); // M 10
+        yh1.maas(); // YH
+        yh1.ozelSigorta(); // M
+        yh1.sigorta(); // Personel
+        System.out.println(yh1.isim); // Personel
+        System.out.println(yh1.soyIsim); // Personel
+        System.out.println(yh1.departman); // Personel
+
+        // System.out.println(yh1.issizlikSigorta); --> aramaya muhasebeden basladigimizdan
+        //        issizlikSigortasi bulamadik CTE
     }
 }

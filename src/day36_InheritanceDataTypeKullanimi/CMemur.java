@@ -14,8 +14,8 @@ public class CMemur extends BMuhasebe {
 
     public static void main(String[] args) {
         CMemur mmr1=new CMemur();
-        System.out.println(mmr1.gunlukMesai); // 9
-        System.out.println(mmr1.saatUcreti); // 12
+        System.out.println(mmr1.gunlukMesai); // 8
+        System.out.println(mmr1.saatUcreti); // 10
         mmr1.maas();
         mmr1.ozelSigorta();
         mmr1.sigorta(); // Personel
