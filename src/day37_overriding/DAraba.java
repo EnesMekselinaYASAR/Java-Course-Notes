@@ -1,8 +1,11 @@
 package day37_overriding;
 
 public class DAraba {
-    void yakit(){
+    private void yakit(){
         System.out.println("tum arabalar yakit kullanir");
+        /*
+        Parent class dan override edilmesini istemediginiz methodlari private, static veya final yapabilirsiniz
+         */
     }
     void marka() {
         System.out.println("tum arabalarin markasi vardir");
