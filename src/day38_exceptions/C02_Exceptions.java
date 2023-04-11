@@ -21,7 +21,7 @@ public class C02_Exceptions {
 
             try {
                 System.out.println(a/b);
-            } catch (Exception e) {
+            } catch (ArithmeticException e) {
                 System.out.println("payda 0 oldu, dikkatli ol");
             }
 
