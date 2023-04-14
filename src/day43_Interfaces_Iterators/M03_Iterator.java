@@ -75,8 +75,5 @@ public class M03_Iterator {
         Bu da bize yetmez.
          */
 
-
-
-
     }
 }
