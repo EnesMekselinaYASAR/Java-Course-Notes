@@ -49,19 +49,5 @@ public class C04_LinkedList_QueueDataTuru {
         // System.out.println(ll4.remove()); // NoSuchElementException
         System.out.println(ll4.poll()); // null
 
-
-
-
-
-
-        /*
-        Queue kuyruk demektir, sıra onemlidir.
-        gelen sona gelir, giden bastan gider
-         */
-
-
-
-
-
     }
 }
