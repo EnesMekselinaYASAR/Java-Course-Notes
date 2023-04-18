@@ -53,8 +53,8 @@ public class C01_NestedMaps {
         103={soyisim=Deniz, brans=Devops, isim=Derya}
          */
 
-        // 102 nolu ogrencinin ismini yazdiralim
 
+        // 102 nolu ogrencinin ismini yazdiralim
         System.out.println(ogrenciNestedMap.get(102).get("isim")); // Taha
 
 
